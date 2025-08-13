@@ -1,0 +1,110 @@
+/* Mobile-First */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.center-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem; 
+    /* background-color: red; */
+}
+
+.content{
+    background-color: aquamarine;
+    border: 0.300rem solid black;
+    width: 100%;
+    height: auto;     /*<--------------------------------*/
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.box{
+    background-color: lightskyblue;
+    width: 100%;
+    /* height: auto; */     /*<--------------------------------*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#left-box{
+    align-items: center;
+    gap: 1rem;
+}
+
+#left-box h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    border: 0.200rem solid black;
+    border-radius: 1rem;
+}
+
+#left-box .language-input{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#left-box .btn{
+    padding: 0.5rem 0.75rem;
+    width: 90%;
+    border-radius: 0.400rem;
+    transition: all 0.3s ease;
+}
+
+#left-box .btn:hover{
+    background-color: #ccc;
+    border-radius: 1.25rem;
+}
+
+
+#right-box{
+    background-color: azure;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.language{
+    background-color: pink;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: 0.200rem solid black;
+    border-radius: 0.800rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-language{
+    letter-spacing: 0.05rem;
+}
+
+.right-language{
+    /* border: 0.200rem solid black; */
+    padding: 0.5rem 0.75rem;
+}
