@@ -164,7 +164,6 @@ body{
 .left-language{
     flex: 1;
     margin-right: var(--spacing-5md);
-    border: 3px solid red;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
