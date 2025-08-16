@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site demonstrativo de DOM">
+    <meta name="description" content="Demostrativo de DOM">
     <meta name="author" content="Ikaro França Leal">
     <link rel="stylesheet" href="style.css">
-    <title>Demonstrativo de DOM</title>
+    <title>Demostrativo de DOM</title>
 </head>
 <body>
-    
+
+
     <div class="center-container">
         <main class="content">
             <section id="left-box" class="box">
-                <h2>Linguagens de programação</h2>
-                <input type="text" class="language-input" id="language-input" name="TEXTINPUT" placeholder="Digite a linguagem">
-                <button id="btn-before" class="btn">Adicionar antes</button>
-                <button id="btn-after" class="btn">Adicionar depois</button>
-                <button id="btn-remove" class="btn">Remover seleção</button>
-                <button id="btn-remove" class="btn">Remover seleção</button>
-                <button id="btn-remove" class="btn">Remover seleção</button>
-                <button id="btn-select" class="btn">Selecionar</button>
+                <h2>Linguaguens de programação</h2>
+                <input type="text" id="language-input" class="language-input" placeholder="Digite a linguaguem">
+                <div class="btn-container">
+                    <button id="btn-add-before" class="btn">Adicionar antes</button>
+                    <button id="btn-add-after" class="btn">Adicionar depois</button>
+                    <button id="btn-edit-selected" class="btn">Editar seleção</button>
+                    <button id="btn-remove-selected" class="btn">Remover seleção</button>
+                    <button id="btn-clear-selection" class="btn">Desselecionar</button>
+                    <button id="btn-select-item" class="btn">Selecionar</button>
+                </div>
             </section>
+
 
             <section id="right-box" class="box">
                 <div class="language-container">      <!-- Essa div serve para conter os elementos filhos, que são as linguaguens de programação  -->
-                    
+                
                     <!-- Aqui vão entrar as Linguagens de programação -->
-
+                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
@@ -49,25 +53,12 @@
                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
                     <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-                    <div class="language"><div class="left-language">JavaScript</div><div class="right-language"><input type="radio" name="LANGUAGE"></div></div>
-
                 </div>
             </section>
         </main>
     </div>
 
-    <script src="app.js"></script>
+
+<script src="app.js"></script>
 </body>
 </html>
